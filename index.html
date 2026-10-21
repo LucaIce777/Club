@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De Prime Lounge | Drinks Menu</title>
+<meta name="description" content="De Prime Lounge official drinks menu — Champagne, Whisky, Cognac and more. Browse and search our full price list.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#hero" class="brand">
+      <img src="images/logo.png" alt="De Prime Lounge logo">
+      <span class="brand-name">DE PRIME<span>LOUNGE &nbsp;•&nbsp; MENU</span></span>
+    </a>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#champagne">Champagne</a></li>
+        <li><a href="#whisky-cognac">Whisky &amp; Cognac</a></li>
+        <li><a href="#standard-tier">Standard Tier</a></li>
+        <li><a href="#contact">Visit Us</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section id="hero">
+  <div class="hero-content">
+    <img src="images/logo.png" alt="De Prime Lounge" class="hero-logo">
+    <h1>DE PRIME</h1>
+    <p class="subtitle">Lounge</p>
+    <p class="tagline">Premium champagnes, fine whiskies &amp; cognac in an atmosphere made for the night. Explore our full drinks menu below.</p>
+
+    <div class="search-wrap">
+      <input type="text" id="menu-search" placeholder="Search a drink e.g. Hennessy, Moët, Macallan..." autocomplete="off">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+    <p class="search-hint">Start typing to find any item &amp; price instantly</p>
+  </div>
+</section>
+
+<!-- ===== Menu Sections (rendered by JS) ===== -->
+<main id="menu-container">
+  <!-- categories injected here -->
+</main>
+
+<p id="no-results">
+  <span class="icon"><i class="fa-solid fa-martini-glass"></i></span><br>
+  No drinks found matching your search.<br>Try a different name.
+</p>
+
+<p class="note-strip"><i class="fa-solid fa-circle-info" style="color:var(--gold)"></i>&nbsp; Prices are subject to change without prior notice. All prices are in Nigerian Naira (₦).</p>
+
+<!-- ===== Footer ===== -->
+<footer id="site-footer">
+  <img src="images/logo.png" alt="De Prime Lounge logo">
+  <p class="footer-name">DE PRIME LOUNGE</p>
+  <p>Premium Drinks &amp; Good Vibes</p>
+  <p id="contact"><i class="fa-solid fa-location-dot gold-text"></i>&nbsp; Visit us for the full experience</p>
+
+  <div class="footer-socials">
+    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+  </div>
+
+  <div class="footer-bottom">&copy; <span id="year"></span> De Prime Lounge. All rights reserved.</div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/menu-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
